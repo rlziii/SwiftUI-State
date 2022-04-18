@@ -9,13 +9,11 @@ struct LogEntry {
 
 class DebugViewModel: ObservableObject {
     @Published var logEntries = [LogEntry]()
-    private let logger: DebugLogger
     private var cancellables = Set<AnyCancellable>()
 
-    init(logger: DebugLogger) {
-        self.logger = logger
-
-        logger.viewNames
+    init() {
+        NotificationCenter.default.publisher(for: .logPosted)
+            .compactMap { $0.userInfo?[Logger.LogKey.logString] as? String }
             .map { [unowned self] in
                 let now = Date.now
 
@@ -37,19 +35,16 @@ class DebugViewModel: ObservableObject {
             .sink { [unowned self] in logEntries.append($0) }
             .store(in: &cancellables)
 
-        logger.actions
-            .filter { $0 == .clearViewNames }
+        NotificationCenter.default.publisher(for: .logAction)
+            .compactMap { $0.userInfo?[Logger.LogKey.logAction] as? Logger.LogAction }
+            .filter { $0 == .clearLogs }
             .sink { [unowned self] _ in logEntries.removeAll() }
             .store(in: &cancellables)
     }
 }
 
 struct DebugView: View {
-    @StateObject private var viewModel: DebugViewModel
-
-    init(logger: DebugLogger) {
-        self._viewModel = .init(wrappedValue: DebugViewModel(logger: logger))
-    }
+    @StateObject private var viewModel = DebugViewModel()
 
     var body: some View {
         VStack {

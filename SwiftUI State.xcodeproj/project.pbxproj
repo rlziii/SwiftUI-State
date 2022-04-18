@@ -11,7 +11,7 @@
 		80226FEF275970AC0075F973 /* WithNestedState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80226FEE275970AC0075F973 /* WithNestedState.swift */; };
 		80226FF1275970AD0075F973 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80226FF0275970AD0075F973 /* Assets.xcassets */; };
 		80263A152791D38A00312096 /* DebugView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80263A142791D38A00312096 /* DebugView.swift */; };
-		80263A172791D39F00312096 /* DebugLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80263A162791D39F00312096 /* DebugLogger.swift */; };
+		80263A172791D39F00312096 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80263A162791D39F00312096 /* Logger.swift */; };
 		80B7779D278D3D2F004B9074 /* WithoutNestedState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B7779C278D3D2F004B9074 /* WithoutNestedState.swift */; };
 /* End PBXBuildFile section */
 
@@ -21,7 +21,7 @@
 		80226FEE275970AC0075F973 /* WithNestedState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithNestedState.swift; sourceTree = "<group>"; };
 		80226FF0275970AD0075F973 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		80263A142791D38A00312096 /* DebugView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugView.swift; sourceTree = "<group>"; };
-		80263A162791D39F00312096 /* DebugLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugLogger.swift; sourceTree = "<group>"; };
+		80263A162791D39F00312096 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		80B7779C278D3D2F004B9074 /* WithoutNestedState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithoutNestedState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -66,7 +66,7 @@
 			children = (
 				80226FF0275970AD0075F973 /* Assets.xcassets */,
 				80226FEC275970AC0075F973 /* Application.swift */,
-				80263A162791D39F00312096 /* DebugLogger.swift */,
+				80263A162791D39F00312096 /* Logger.swift */,
 			);
 			path = "App Files";
 			sourceTree = "<group>";
@@ -153,7 +153,7 @@
 				80263A152791D38A00312096 /* DebugView.swift in Sources */,
 				80226FEF275970AC0075F973 /* WithNestedState.swift in Sources */,
 				80226FED275970AC0075F973 /* Application.swift in Sources */,
-				80263A172791D39F00312096 /* DebugLogger.swift in Sources */,
+				80263A172791D39F00312096 /* Logger.swift in Sources */,
 				80B7779D278D3D2F004B9074 /* WithoutNestedState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

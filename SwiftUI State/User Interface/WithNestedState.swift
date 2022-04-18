@@ -24,7 +24,6 @@ class OuterViewModel: ObservableObject {
 
 struct OuterView: View {
     @StateObject private var outerViewModel = OuterViewModel()
-    let logger: DebugLogger
 
     var body: some View {
         didUpdate()
@@ -35,7 +34,7 @@ struct OuterView: View {
             case .noInnerView:
                 EmptyView()
             case .withInnerView(let innerViewModel):
-                InnerView(innerViewModel: innerViewModel, logger: logger)
+                InnerView(innerViewModel: innerViewModel)
             }
         }
         .padding()
@@ -43,7 +42,7 @@ struct OuterView: View {
     }
 
     private func didUpdate() {
-        logger.didUpdateView("OuterView")
+        Logger.printLog("OuterView")
     }
 }
 
@@ -61,7 +60,6 @@ class InnerViewModel: ObservableObject {
 
 struct InnerView: View {
     @ObservedObject var innerViewModel: InnerViewModel
-    let logger: DebugLogger
 
     var body: some View {
         didUpdate()
@@ -74,6 +72,6 @@ struct InnerView: View {
     }
 
     private func didUpdate() {
-        logger.didUpdateView("InnerView")
+        Logger.printLog("InnerView")
     }
 }
