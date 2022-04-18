@@ -36,6 +36,11 @@ class DebugViewModel: ObservableObject {
             }
             .sink { [unowned self] in logEntries.append($0) }
             .store(in: &cancellables)
+
+        logger.actions
+            .filter { $0 == .clearViewNames }
+            .sink { [unowned self] _ in logEntries.removeAll() }
+            .store(in: &cancellables)
     }
 }
 

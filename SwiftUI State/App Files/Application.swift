@@ -13,11 +13,13 @@ struct Application: App {
                         NavigationLink("With Nested State") {
                             OuterView(logger: logger)
                                 .navigationTitle("With Nested State")
+                                .onDisappear { logger.sendAction(.clearViewNames) }
                         }
 
                         NavigationLink("Without Nested State") {
                             SomeOuterView(logger: logger)
                                 .navigationTitle("Without Nested State")
+                                .onDisappear { logger.sendAction(.clearViewNames) }
                         }
                     }
                 }
