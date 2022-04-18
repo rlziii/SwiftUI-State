@@ -1,11 +1,6 @@
 import Combine
 import Foundation
 
-extension Notification.Name {
-    static let logPosted = Notification.Name("LogPosted")
-    static let logAction = Notification.Name("LogAction")
-}
-
 // Namespace.
 enum Logger {
     static func printLog(_ logString: String) {
@@ -24,4 +19,9 @@ enum Logger {
     enum LogAction {
         case clearLogs
     }
+}
+
+extension Notification.Name {
+    static let logPosted = Notification.Name("LogPosted")
+    static let logAction = Notification.Name("LogAction")
 }
