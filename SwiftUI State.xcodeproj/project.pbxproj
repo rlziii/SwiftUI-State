@@ -13,6 +13,8 @@
 		80263A152791D38A00312096 /* DebugView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80263A142791D38A00312096 /* DebugView.swift */; };
 		80263A172791D39F00312096 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80263A162791D39F00312096 /* Logger.swift */; };
 		80B7779D278D3D2F004B9074 /* WithoutNestedState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B7779C278D3D2F004B9074 /* WithoutNestedState.swift */; };
+		80D0C087280E454B001C6D29 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D0C086280E454B001C6D29 /* MainView.swift */; };
+		80D0C08A280E4B52001C6D29 /* SubstateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D0C089280E4B52001C6D29 /* SubstateView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		80263A142791D38A00312096 /* DebugView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugView.swift; sourceTree = "<group>"; };
 		80263A162791D39F00312096 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		80B7779C278D3D2F004B9074 /* WithoutNestedState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithoutNestedState.swift; sourceTree = "<group>"; };
+		80D0C086280E454B001C6D29 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		80D0C089280E4B52001C6D29 /* SubstateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubstateView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +70,6 @@
 			children = (
 				80226FF0275970AD0075F973 /* Assets.xcassets */,
 				80226FEC275970AC0075F973 /* Application.swift */,
-				80263A162791D39F00312096 /* Logger.swift */,
 			);
 			path = "App Files";
 			sourceTree = "<group>";
@@ -74,11 +77,30 @@
 		80226FFB275970C90075F973 /* User Interface */ = {
 			isa = PBXGroup;
 			children = (
-				80263A142791D38A00312096 /* DebugView.swift */,
-				80226FEE275970AC0075F973 /* WithNestedState.swift */,
-				80B7779C278D3D2F004B9074 /* WithoutNestedState.swift */,
+				80D0C085280E453F001C6D29 /* Main */,
+				80D0C088280E456F001C6D29 /* Substate */,
 			);
 			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		80D0C085280E453F001C6D29 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				80D0C086280E454B001C6D29 /* MainView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		80D0C088280E456F001C6D29 /* Substate */ = {
+			isa = PBXGroup;
+			children = (
+				80263A142791D38A00312096 /* DebugView.swift */,
+				80263A162791D39F00312096 /* Logger.swift */,
+				80226FEE275970AC0075F973 /* WithNestedState.swift */,
+				80B7779C278D3D2F004B9074 /* WithoutNestedState.swift */,
+				80D0C089280E4B52001C6D29 /* SubstateView.swift */,
+			);
+			path = Substate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,7 +172,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80D0C08A280E4B52001C6D29 /* SubstateView.swift in Sources */,
 				80263A152791D38A00312096 /* DebugView.swift in Sources */,
+				80D0C087280E454B001C6D29 /* MainView.swift in Sources */,
 				80226FEF275970AC0075F973 /* WithNestedState.swift in Sources */,
 				80226FED275970AC0075F973 /* Application.swift in Sources */,
 				80263A172791D39F00312096 /* Logger.swift in Sources */,
