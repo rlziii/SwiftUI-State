@@ -10,7 +10,6 @@ struct SubstateView: View {
                             .navigationTitle("Without Nested State")
                             .onDisappear { Logger.logAction(.clearLogs) }
                     }
-                    
                     NavigationLink("With Nested State") {
                         WithNestedState.OuterView()
                             .navigationTitle("With Nested State")
@@ -18,7 +17,14 @@ struct SubstateView: View {
                     }
                 }
             }
+
             Divider()
+            NavigationLink(
+                destination: { ColorsView() },
+                label: { Text("ColorsListView \(Image(systemName: "chevron.right"))") }
+            )
+            Divider()
+
             DebugView()
         }
         .navigationTitle("Substate")

@@ -15,6 +15,7 @@
 		80B7779D278D3D2F004B9074 /* WithoutNestedState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B7779C278D3D2F004B9074 /* WithoutNestedState.swift */; };
 		80D0C087280E454B001C6D29 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D0C086280E454B001C6D29 /* MainView.swift */; };
 		80D0C08A280E4B52001C6D29 /* SubstateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D0C089280E4B52001C6D29 /* SubstateView.swift */; };
+		80D0C08C280E5274001C6D29 /* ColorsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D0C08B280E5274001C6D29 /* ColorsListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		80B7779C278D3D2F004B9074 /* WithoutNestedState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithoutNestedState.swift; sourceTree = "<group>"; };
 		80D0C086280E454B001C6D29 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		80D0C089280E4B52001C6D29 /* SubstateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubstateView.swift; sourceTree = "<group>"; };
+		80D0C08B280E5274001C6D29 /* ColorsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 				80226FEE275970AC0075F973 /* WithNestedState.swift */,
 				80B7779C278D3D2F004B9074 /* WithoutNestedState.swift */,
 				80D0C089280E4B52001C6D29 /* SubstateView.swift */,
+				80D0C08B280E5274001C6D29 /* ColorsListView.swift */,
 			);
 			path = Substate;
 			sourceTree = "<group>";
@@ -172,6 +175,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80D0C08C280E5274001C6D29 /* ColorsListView.swift in Sources */,
 				80D0C08A280E4B52001C6D29 /* SubstateView.swift in Sources */,
 				80263A152791D38A00312096 /* DebugView.swift in Sources */,
 				80D0C087280E454B001C6D29 /* MainView.swift in Sources */,
