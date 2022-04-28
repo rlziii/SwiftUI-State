@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8013B472281A375700E60848 /* ObservedObjectCounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8013B471281A375700E60848 /* ObservedObjectCounterView.swift */; };
+		8013B474281A39C400E60848 /* CounterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8013B473281A39C400E60848 /* CounterViewModel.swift */; };
+		8013B476281A3A2100E60848 /* StateObjectCounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8013B475281A3A2100E60848 /* StateObjectCounterView.swift */; };
+		8013B478281A3A7700E60848 /* SuperCoolButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8013B477281A3A7700E60848 /* SuperCoolButtonView.swift */; };
 		80226FED275970AC0075F973 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80226FEC275970AC0075F973 /* Application.swift */; };
 		80226FEF275970AC0075F973 /* WithNestedState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80226FEE275970AC0075F973 /* WithNestedState.swift */; };
 		80226FF1275970AD0075F973 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80226FF0275970AD0075F973 /* Assets.xcassets */; };
@@ -20,6 +24,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8013B471281A375700E60848 /* ObservedObjectCounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservedObjectCounterView.swift; sourceTree = "<group>"; };
+		8013B473281A39C400E60848 /* CounterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterViewModel.swift; sourceTree = "<group>"; };
+		8013B475281A3A2100E60848 /* StateObjectCounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateObjectCounterView.swift; sourceTree = "<group>"; };
+		8013B477281A3A7700E60848 /* SuperCoolButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperCoolButtonView.swift; sourceTree = "<group>"; };
 		80226FE9275970AC0075F973 /* SwiftUI State.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI State.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		80226FEC275970AC0075F973 /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
 		80226FEE275970AC0075F973 /* WithNestedState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithNestedState.swift; sourceTree = "<group>"; };
@@ -44,6 +52,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8013B46E281A36EE00E60848 /* ObservedObject vs StateObject */ = {
+			isa = PBXGroup;
+			children = (
+				8013B473281A39C400E60848 /* CounterViewModel.swift */,
+				8013B471281A375700E60848 /* ObservedObjectCounterView.swift */,
+				8013B475281A3A2100E60848 /* StateObjectCounterView.swift */,
+				8013B477281A3A7700E60848 /* SuperCoolButtonView.swift */,
+			);
+			path = "ObservedObject vs StateObject";
+			sourceTree = "<group>";
+		};
 		80226FE0275970AC0075F973 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +100,7 @@
 		80226FFB275970C90075F973 /* User Interface */ = {
 			isa = PBXGroup;
 			children = (
+				8013B46E281A36EE00E60848 /* ObservedObject vs StateObject */,
 				80C6C4CB2810F31E006170A2 /* Container Views */,
 				80D0C085280E453F001C6D29 /* Main */,
 				80D0C088280E456F001C6D29 /* Substate */,
@@ -188,13 +208,17 @@
 			files = (
 				80D0C08C280E5274001C6D29 /* ColorsListView.swift in Sources */,
 				80D0C08A280E4B52001C6D29 /* SubstateView.swift in Sources */,
+				8013B472281A375700E60848 /* ObservedObjectCounterView.swift in Sources */,
 				80263A152791D38A00312096 /* DebugView.swift in Sources */,
 				80C6C4CD2810F659006170A2 /* LoginView.swift in Sources */,
+				8013B474281A39C400E60848 /* CounterViewModel.swift in Sources */,
 				80D0C087280E454B001C6D29 /* MainView.swift in Sources */,
 				80226FEF275970AC0075F973 /* WithNestedState.swift in Sources */,
 				80226FED275970AC0075F973 /* Application.swift in Sources */,
 				80263A172791D39F00312096 /* Logger.swift in Sources */,
+				8013B478281A3A7700E60848 /* SuperCoolButtonView.swift in Sources */,
 				80B7779D278D3D2F004B9074 /* WithoutNestedState.swift in Sources */,
+				8013B476281A3A2100E60848 /* StateObjectCounterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
