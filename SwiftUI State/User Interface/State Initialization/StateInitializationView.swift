@@ -42,6 +42,7 @@ struct StateInitializationView: View {
                 }
             }
         }
+        .navigationTitle("State Init")
     }
 }
 

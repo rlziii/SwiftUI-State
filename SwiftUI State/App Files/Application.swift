@@ -7,7 +7,7 @@ struct Application: App {
         WindowGroup {
             NavigationView {
                 MainView()
-            }
+            }.navigationViewStyle(.stack)
         }
     }
 }

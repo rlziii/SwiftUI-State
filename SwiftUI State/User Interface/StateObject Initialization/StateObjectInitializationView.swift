@@ -63,6 +63,7 @@ struct StateObjectInitializationView: View {
 
             SOCounterView(viewModel: .init(startingCount: randomNumber))
         }
+        .navigationTitle("StateObject Init")
     }
 }
 

@@ -32,7 +32,7 @@ struct ColorsListView: View {
             }
 
         }
-        .navigationBarTitleDisplayMode(.inline)
+        .navigationTitle("Colors List")
     }
 }
 

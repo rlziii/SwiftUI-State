@@ -28,7 +28,7 @@ struct SuperCoolButtonView: View {
                 StateObjectCounterView()
             }
         }
-        .navigationBarTitleDisplayMode(.inline)
+        .navigationTitle("OO vs SO")
     }
 
     func randomColor() -> Color {
