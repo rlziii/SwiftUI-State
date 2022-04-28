@@ -2,6 +2,7 @@ import SwiftUI
 
 struct StateObjectCounterView: View {
     @StateObject private var viewModel = CounterViewModel()
+
     var body: some View {
         VStack {
             Text("Count: \(viewModel.count)")

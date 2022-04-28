@@ -4,7 +4,7 @@ struct CounterLabelView: View {
     @State private var counterText: String
 
     init(count: Int) {
-        _counterText = State(wrappedValue: "Count: \(count)")
+        _counterText = .init(initialValue: "Count: \(count)")
     }
 
     var body: some View {
@@ -13,7 +13,7 @@ struct CounterLabelView: View {
 }
 
 struct StateInitializationView: View {
-    @State private var count = 0
+    @State private var count = Int.random(in: 1...100)
 
     var body: some View {
         VStack {

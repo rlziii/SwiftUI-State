@@ -1,11 +1,9 @@
 import SwiftUI
 
 // MARK: Namespace
-
 enum WithNestedState {}
 
 // MARK: - OuterViewModel
-
 extension WithNestedState {
     class OuterViewModel: ObservableObject {
         enum State {
@@ -18,16 +16,19 @@ extension WithNestedState {
         func update() {
             switch state {
             case .noInnerView:
-                state = .withInnerView(InnerViewModel())
+                withAnimation(.interactiveSpring()) {
+                    state = .withInnerView(InnerViewModel())
+                }
             case .withInnerView:
-                state = .noInnerView
+                withAnimation(.interactiveSpring()) {
+                    state = .noInnerView
+                }
             }
         }
     }
 }
 
 // MARK: - OuterView
-
 extension WithNestedState {
     struct OuterView: View {
         @StateObject private var outerViewModel = OuterViewModel()
@@ -55,7 +56,6 @@ extension WithNestedState {
 }
 
 // MARK: - InnerViewModel
-
 extension WithNestedState {
     class InnerViewModel: ObservableObject {
         @Published var someBool = false
@@ -67,7 +67,6 @@ extension WithNestedState {
 }
 
 // MARK: - InnerView
-
 extension WithNestedState {
     struct InnerView: View {
         @ObservedObject var innerViewModel: InnerViewModel

@@ -17,7 +17,7 @@ struct MainView: View {
             )
             NavigationLink(
                 "ObservedObject vs StateObject",
-                destination: SuperCoolButtonView()
+                destination: OOvsSOView()
             )
             NavigationLink(
                 "Container Views",

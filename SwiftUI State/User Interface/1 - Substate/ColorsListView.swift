@@ -1,22 +1,7 @@
 import SwiftUI
 
 class ColorsViewModel: ObservableObject {
-    @Published var colorNames: [Color] = [
-        .blue,
-        .brown,
-        .cyan,
-        .gray,
-        .green,
-        .indigo,
-        .mint,
-        .orange,
-        .pink,
-        .purple,
-        .red,
-        .teal,
-        .yellow,
-    ]
-
+    @Published var colorNames = Color.all
     @Published var renderAsColors = false
 }
 
