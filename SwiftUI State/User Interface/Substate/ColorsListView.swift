@@ -20,7 +20,7 @@ class ColorsViewModel: ObservableObject {
     @Published var renderAsColors = false
 }
 
-struct ColorsView: View {
+struct ColorsListView: View {
     @StateObject private var viewModel = ColorsViewModel()
 
     var body: some View {

@@ -7,7 +7,7 @@ struct MainView: View {
             NavigationLink("State init", destination: EmptyView())
             NavigationLink("StateObject init", destination: EmptyView())
             NavigationLink("Infinite Redraws", destination: EmptyView())
-            NavigationLink("Container Views", destination: EmptyView())
+            NavigationLink("Container Views", destination: LoginView(networkManager: NetworkManager()))
         }
         .navigationTitle("SwiftUI State")
     }

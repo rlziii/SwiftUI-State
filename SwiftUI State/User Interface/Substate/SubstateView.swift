@@ -20,7 +20,7 @@ struct SubstateView: View {
 
             Divider()
             NavigationLink(
-                destination: { ColorsView() },
+                destination: { ColorsListView() },
                 label: { Text("ColorsListView \(Image(systemName: "chevron.right"))") }
             )
             Divider()
