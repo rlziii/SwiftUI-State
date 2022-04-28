@@ -1,6 +1,8 @@
 import SwiftUI
 
 struct MainView: View {
+    let networkManager: NetworkManager
+
     var body: some View {
         List {
             NavigationLink(
@@ -21,7 +23,7 @@ struct MainView: View {
             )
             NavigationLink(
                 "Container Views",
-                destination: LoginView(networkManager: NetworkManager())
+                destination: LoginView(networkManager: networkManager)
             )
         }
         .navigationTitle("SwiftUI State")
@@ -30,6 +32,6 @@ struct MainView: View {
 
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
-        MainView()
+        MainView(networkManager: .init(cache: .init()))
     }
 }

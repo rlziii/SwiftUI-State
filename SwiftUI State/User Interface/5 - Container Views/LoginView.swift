@@ -50,7 +50,7 @@ struct LoginView: View {
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            LoginView(networkManager: NetworkManager())
+            LoginView(networkManager: .init(cache: .init()))
         }
     }
 }
