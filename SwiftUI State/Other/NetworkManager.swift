@@ -1,12 +1,14 @@
-class NetworkManager {
-    let cache: CacheManager
+import Foundation
 
-    init(cache: CacheManager) {
-        self.cache = cache
-    }
+actor NetworkManager: ObservableObject {
+    func fetchChapter(for id: Int) async -> ChapterInfo? {
+        // Wait for 0.25 seconds.
+        try? await Task.sleep(nanoseconds: 250_000_000)
 
-    func login(username: String, password: String) async throws -> Bool {
-        try await Task.sleep(nanoseconds: 1_000_000_000)
-        return password == "password"
+        if ChapterInfo.previews.indices.contains(id - 1) {
+            return ChapterInfo.previews[id - 1]
+        } else {
+            return nil
+        }
     }
 }

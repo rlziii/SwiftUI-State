@@ -3,13 +3,15 @@ import SwiftUI
 
 @main
 struct Application: App {
-    let networkManager = NetworkManager(cache: .init())
+    let networkManager = NetworkManager()
 
     var body: some Scene {
         WindowGroup {
             NavigationView {
-                MainView(networkManager: networkManager)
-            }.navigationViewStyle(.stack)
+                MainView()
+            }
+            .environmentObject(networkManager)
+            .navigationViewStyle(.stack)
         }
     }
 }
